@@ -1,0 +1,191 @@
+    1  java -version 
+    2  mvn -version 
+    3  ansible --version 
+    4  docker status 
+    5  docker version 
+    6  exit
+    7  ls
+    8  mkdir myfalt
+    9  ls
+   10  cd myfalt/
+   11  ls
+   12  echo "SMART TV, SOFA" > Drwaing_Room.txt
+   13  echo "Moduler Kitchen" > Kitchen.txt
+   14  echo "King Size bed" > Mater_Bed_Room.txt
+   15  echo "Queen Size bed" > kids_Bed_Room.txt
+   16  ls
+   17  git add . 
+   18  git init . 
+   19  git add . 
+   20  git commit -m "My Falt Goods"
+   21  git status 
+   22  git push 
+   23  git remote add origin https://github.com/amitvashisttech/devops-acc-2020April06.git
+   24  git push 
+   25  git push --set-upstream origin master
+   26  history 
+   27  ls
+   28  git add . 
+   29  git status 
+   30  git -version 
+   31  git --version 
+   32  git push 
+   33  ls
+   34  git commit -m "Commit" 
+   35  git push 
+   36  ls
+   37  cd ..
+   38  ls
+   39  git clone https://github.com/amitvashisttech/devops-acc-2020April06.git
+   40  ls
+   41  cd devops-acc-2020April06/
+   42  ls
+   43  git pull 
+   44  ls
+   45  vim README.md 
+   46  echo "Hello World" > hello.txt
+   47  git status 
+   48  git add hello.txt
+   49  git status 
+   50  git commit -m "Add a new hello file & modifiy Readme #"
+   51  git log 
+   52  ls
+   53  git log 
+   54  git push 
+   55  ls
+   56  rm -rf hello.txt 
+   57  git add . 
+   58  git status 
+   59  git add . ;git commit -m "hello file has been removed"; git push 
+   60  git logs 
+   61  git log
+   62  ls
+   63  echo "Hello World" > Hello.txt
+   64  git status 
+   65  git add .
+   66  git status 
+   67  git commit -m "Hello File"
+   68  git status 
+   69  git push
+   70  history 
+   71  git history
+   72  git logs 
+   73  git log
+   74  git diff 34cb0766  339d2800
+   75  history | grep -i global
+   76  git config --global --list 
+   77  git status 
+   78  git log 
+   79  git pull 
+   80  git log 
+   81  ls
+   82  git config --global --list
+   83  git config --global core.editor=vi 
+   84  ls
+   85  cd ..
+   86  ls
+   87  mkdir myproject
+   88  ls
+   89  cd my
+   90  cd myproject/
+   91  ls
+   92  git init . 
+   93  ls
+   94  echo "MyProject" > project.txt
+   95  git add . ; git commit -m "Project"
+   96  git push 
+   97  ls
+   98  cd ..
+   99  ls
+  100  cd devops-acc-2020April06/
+  101  ls
+  102  echo "Apple Pie" 
+  103  echo "Apple Pie" | git hash-object
+  104  echo "Apple Pie" | git hash-object --sidin 
+  105  echo "Apple Pie" | git hash-object --stdin 
+  106  echo "Apple PIE" | git hash-object --stdin 
+  107  echo "Apple PIE" | git hash-object --stdin -w
+  108  echo "Amit Vashist" | git hash-object --stdin -w
+  109  git cat-file c42fe628543c9f330ea51dea312d32cd72d7f454 -t 
+  110  git cat-file c42fe628543c9f330ea51dea312d32cd72d7f454 -p 
+  111  git cat-file 23991897e13e47ed0adb91a0082c31c82fe0cbe5 -p 
+  112  git cat-file 0368968a9aadab704c9f97876772a444bd31e42b -p 
+  113  ls
+  114  cd .git/
+  115  ls
+  116  cd objects/
+  117  ls
+  118  git cat-file 0368968a9aadab704c9f97876772a444bd31e42b -p 
+  119  git cat-file 23991897e13e47ed0adb91a0082c31c82fe0cbe5 -p 
+  120  git cat-file c42fe628543c9f330ea51dea312d32cd72d7f454 -p 
+  121  ls
+  122  cd ..
+  123  ls
+  124  cd ..
+  125  ls
+  126  mv Hello.txt Hello_World.txt 
+  127  git add . 
+  128  git status 
+  129  rm -rf Hello_World.txt 
+  130  git add . 
+  131  git status 
+  132  ls
+  133  git log 
+  134  cat .git/refs/heads/master 
+  135  ls  .git/branches/
+  136  ls
+  137  git branch 
+  138  git branch production 
+  139  git branch staging
+  140  git branch 
+  141  cat .git/refs/heads/master 
+  142  git HEAD
+  143  git show HEAD
+  144  ls
+  145  git branch 
+  146  git checkout production
+  147  ls
+  148  git branch 
+  149  git show HEAD
+  150  ls
+  151  echo "Welcome to Production Branch" > Prod_Branch.txt
+  152  git add . ; git commit -m "Prod_Branch"
+  153  git log 
+  154  git show HEAD
+  155  git brach
+  156  git checkout master
+  157  git branch
+  158* git show H
+  159  ls
+  160  git checkout production
+  161  ls
+  162  git checkout staging 
+  163  ls
+  164  echo "Welcome to Stage branch" > Stage_File.txt
+  165  git add . ; git commit -m "Stage"
+  166  ls
+  167  git show HEAD
+  168  git log 
+  169  ls
+  170  git checkout master
+  171  ls
+  172  git add . 
+  173  git status 
+  174  ls
+  175  echo "test 2" > Hello.txt 
+  176  git add . 
+  177  git status 
+  178  git commit -m "test 2"
+  179  git push 
+  180  git checkout production 
+  181  git push 
+  182  git config --list 
+  183  git push 
+  184  git push --set-upstream origin production
+  185  ls
+  186  cd ..
+  187  ls
+  188  cd devops-acc-2020April06/
+  189  ls
+  190  history 
+  191  history > History_Day1.txt
