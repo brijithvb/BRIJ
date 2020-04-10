@@ -22,14 +22,13 @@ node {
       }
         stage('Package Project') { 
             sh label: '', script: 'mvn package'
-       }
-        
-        stage('Archive Artifact') { 
-            archiveArtifacts 'target/*.war'
+            
         }
-        stage('Petclinic Deployment to Stage Env. - Docker') { 
-            sh label: '', script: 'docker-compose up -d --build'
-       }
+        
+          stage('Archive Artifact') { 
+            archiveArtifacts 'target/*.war'
+            
+        }
       }    
    }
 
