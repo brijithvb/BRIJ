@@ -1,5 +1,5 @@
 node {
-   notify('Job Started')
+
       stage('Git CheckOut') { 
           git branch: 'production', url: 'https://github.com/amitvashisttech/devops-acc-2020April06.git'  
           
@@ -39,14 +39,6 @@ node {
             sh label: '', script: 'cd ../../04-Ansible/04-Roles;ansible-playbook site.yaml'
         } 
       }    
-     notify('Job Completed')
    }
-
-
-def notify(status){
-emailext body: '"${status}:  Job \'${env.JOB_NAME}[${env.BUILD_NUMBER}]\'"', subject: '"${status}:  Job \'${env.JOB_NAME}[${env.BUILD_NUMBER}]\'"', to: 'jenkins@jenkins.com'
-
-}
-    
 
 
