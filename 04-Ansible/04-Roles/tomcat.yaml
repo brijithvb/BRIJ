@@ -1,5 +1,5 @@
 ---
-- hosts: 172.42.42.101
+- hosts: mysrv
   name: Tomcat Deployment
   become: yes
   roles:

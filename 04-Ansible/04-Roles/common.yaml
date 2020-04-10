@@ -1,6 +1,0 @@
----
-- hosts: 172.42.42.101
-  name: Common Task
-  become: yes
-  roles:
-  - server-common
