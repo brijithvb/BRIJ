@@ -44,8 +44,11 @@ node {
 
 
 def notify(status){
-emailext body: '"${status}:  Job \'${env.JOB_NAME}[${env.BUILD_NUMBER}]\'"', subject: '"${status}:  Job \'${env.JOB_NAME}[${env.BUILD_NUMBER}]\'"', to: 'jenkins@jenkins.com'
-
+        emailext (
+        to: 'jenkins@jenkins.com',
+        subject: "${status}:  Job '${env.JOB_NAME}[${env.BUILD_NUMBER}]\'",
+        body: """<p>"${status}:  Job '${env.JOB_NAME}[${env.BUILD_NUMBER}]\'"</p>""",
+       )
 }
     
 
